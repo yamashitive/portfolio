@@ -4,9 +4,24 @@ import ReactDOM from 'react-dom'
 import ItemSection from '../../src/ItemSection'
 import '../../src/styles.css'
 
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBar from 'material-ui/AppBar';
+
+const AppBarIcon = () => (
+  <MuiThemeProvider>
+  <AppBar
+    title="PORTFOLIO"
+    iconClassNameRight="muidocs-icon-navigation-expand-more"
+  />
+  </MuiThemeProvider>
+);
+
 ReactDOM.render(
   <div className='container'>
-    <h1 className='pageTitle'>PORTFOLIO</h1>
+    <AppBarIcon />
+
+    <RaisedBtn />
+
     <ItemSection
       image='pic1'
       label='アートラインかしわ'

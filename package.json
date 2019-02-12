@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Yamashita's portfolio to get job",
   "main": "index.js",
   "scripts": {
     "transpile": "babel src -d dist --copy-files",
@@ -37,5 +37,8 @@
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "material-ui": "^0.20.2"
   }
 }
