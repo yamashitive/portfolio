@@ -2,12 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // HTMLファイルのビルド設定
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
-    template: path.join(__dirname, 'examples/src/index.html'),
+    template: path.join(__dirname, 'src/index.html'),
     filename: './index.html'
 });
 module.exports = {
     // 依存関係解決の起点となる資産を指定します。
-    entry: path.join(__dirname, 'examples/src/index.js'),
+    entry: path.join(__dirname, 'src/index.js'),
     // Babelのトランスパイル対象資産を指定します。
     module: {
         rules: [
@@ -35,7 +35,7 @@ module.exports = {
         port: 3001
     },
     output: {
-        path: path.join(__dirname, "examples/dist"),
+        path: path.join(__dirname, "dist"),
         filename: "bundle.js"
     }
 }

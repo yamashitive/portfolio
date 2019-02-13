@@ -4,10 +4,9 @@
   "description": "Yamashita's portfolio to get job",
   "main": "index.js",
   "scripts": {
-    "transpile": "babel src -d dist --copy-files",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "deploy": "gh-pages -d examples/dist",
+    "deploy": "gh-pages -d dist",
     "publish-demo": "npm run build && npm run deploy"
   },
   "repository": {
